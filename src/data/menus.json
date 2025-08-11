@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Form Pendataan Warga",
+        "icon": "📝",
+        "isActive": true,
+        "path": null,
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfYuoyPhVJdqdrKp_KKDnHOI6gb1dxWvBFdTQW_t5uasRRfww/viewform?usp=header"
+    },
+    {
+        "name": "Form Konfirmasi Pembayaran",
+        "icon": "📝",
+        "isActive": true,
+        "path": null,
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeC5DiGHs6DUYMxOKzGBS1OniS3Y9gHHMig9yOnb3erg-mdtg/viewform?usp=header"
+    },
+    {
+        "name": "Data Warga",
+        "icon": "📁",
+        "isActive": false,
+        "path": "/people",
+        "url": ""
+    },
+    {
+        "name": "Data Iuran",
+        "icon": "📁",
+        "isActive": false,
+        "path": "/finances",
+        "url": ""
+    },
+    {
+        "name": "Notulensi Rapat",
+        "icon": "📃",
+        "isActive": false,
+        "path": "/notulens",
+        "url": ""
+    },
+    {
+        "name": "AD dan ART",
+        "icon": "🚨",
+        "isActive": false,
+        "path": "/ad-art",
+        "url": ""
+    }
+]
