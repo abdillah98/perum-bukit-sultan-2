@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import { MoveLeft } from "lucide-react";
+import Nav from "@/components/Nav";
 // import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
@@ -41,11 +44,10 @@ export default function RootLayout({
         </div> */}
 
         <div className="relative">
+          <Nav />
           <div className="px-6 md:px-0 py-6">
             <main className="max-w-full md:max-w-md mx-auto">
-              <div>
-                {children}
-              </div>
+              <div>{children}</div>
             </main>
           </div>
         </div>

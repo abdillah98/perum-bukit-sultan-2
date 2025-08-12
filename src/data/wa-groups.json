@@ -1,0 +1,27 @@
+[
+    {
+        "id": 2,
+        "groupsName": "Blok E1-E2 (Gang 2)",
+        "groupsUrl": "https://chat.whatsapp.com/BVpZ9iKn2anJgjBL1Qpg1p?mode=ac_t",
+        "isActive": true
+    },
+    {
+        "id": 4,
+        "groupsName": "Blok E3-E4 (Gang 4)",
+        "groupsUrl": "https://chat.whatsapp.com/I6yFryPLP9hGvibrEmerR5",
+        "isActive": true
+    },
+    {
+        "id": 5,
+        "groupsName": "Blok E4-E5 (Gang 5)",
+        "groupsUrl": "https://chat.whatsapp.com/Lj1rSABxGri4mi9xOB3rbE?mode=ac_t",
+        "isActive": true
+    },
+    {
+        "id": 6,
+        "groupsName": "Blok E5-E6 (Gang 6)",
+        "groupsUrl": "https://chat.whatsapp.com/DZ8aBRVCokl9kMlVrH0LCG?mode=ac_t",
+        "isActive": true
+    }
+    
+]

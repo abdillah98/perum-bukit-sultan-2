@@ -28,17 +28,25 @@
         "url": ""
     },
     {
+        "name": "Group Whatsapp",
+        "icon": "💬",
+        "isActive": true,
+        "path": "/wa-groups",
+        "url": ""
+    },
+    {
         "name": "Notulensi Rapat",
         "icon": "📃",
-        "isActive": false,
+        "isActive": true,
         "path": "/notulens",
         "url": ""
     },
     {
         "name": "AD dan ART",
         "icon": "🚨",
-        "isActive": false,
-        "path": "/ad-art",
+        "isActive": true,
+        "path": "/rules",
         "url": ""
     }
+    
 ]

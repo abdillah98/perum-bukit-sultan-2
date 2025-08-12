@@ -18,7 +18,7 @@ const MenuItem: React.FC<MenuItemsProps> = ({
 
     if (!isActive) {
         return (
-            <div className="cols-span-1 text-center border rounded-lg p-2 cursor-pointer hover:scale-105 transition-transform duration-300 hover:border-neutral-300">
+            <div className="h-full cols-span-1 text-center border rounded-lg p-4 cursor-pointer hover:scale-105 transition-transform duration-300 hover:border-neutral-300">
                 <div className="text-[30px] p-2">{icon}</div>
                 <div className="text-sm mb-2">{name}</div>
                 <div className="bg-blue-500 text-xs text-white font-bold py-1 px-3 rounded-sm">Coming soon</div>
@@ -29,11 +29,11 @@ const MenuItem: React.FC<MenuItemsProps> = ({
     return (
         <>
             {url?.length > 0 && path.length === 0 ?
-                <a href={url} target="_blank" rel="noopener" className="cols-span-1 text-center border rounded-lg p-2 cursor-pointer hover:scale-105 transition-transform duration-300 hover:border-neutral-300">
+                <a href={url} target="_blank" rel="noopener" className="h-full cols-span-1 text-center border rounded-lg p-4 cursor-pointer hover:scale-105 transition-transform duration-300 hover:border-neutral-300">
                     <div className="text-[30px] p-2">{icon}</div>
                     <div className="text-sm">{name}</div>
                 </a> :
-                <Link href={path} className="cols-span-1 text-center border rounded-lg p-2 cursor-pointer hover:scale-105 transition-transform duration-300 hover:border-neutral-300">
+                <Link href={path} className="h-full cols-span-1 text-center border rounded-lg p-4 cursor-pointer hover:scale-105 transition-transform duration-300 hover:border-neutral-300">
                     <div className="text-[30px] p-2">{icon}</div>
                     <div className="text-sm">{name}</div>
                 </Link>
