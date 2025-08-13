@@ -6,7 +6,7 @@ export default function Home() {
     <div className="relative">
       <div className="text-center mb-6">
         <h1 className="text-[24px] font-bold">Selamat Datang!👋</h1>
-        <div>Portal ini untuk memudahkan akses ke form dan data warga perumahan Bukit Sultan 2.</div>
+        <div>Portal ini untuk memudahkan akses ke form dan data warga Perumahan Bukit Sultan Tahap II.</div>
       </div>
       <div className="grid grid-cols-2 gap-4 justify-center items-center">
         {menuData && menuData.length > 0 &&menuData.map((item, index) =>

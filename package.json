@@ -13,6 +13,7 @@
     "@radix-ui/react-tooltip": "^1.2.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "firebase": "^12.1.0",
     "graphql": "^16.11.0",
     "graphql-tag": "^2.12.6",
     "graphql-yoga": "^5.15.1",

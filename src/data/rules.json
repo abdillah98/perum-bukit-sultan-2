@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "documentName": "Anggara Dasar (AD)",
+        "documentName": "Anggara Dasar (AD) - Draft",
         "status": "draft",
         "downloadURL": "https://drive.google.com/file/d/1AnIyYuPMFIaWGIxH4Vn--WXrDrswqrw-/view?usp=sharing"
     },
     {
         "id": 1,
-        "documentName": "Anggaran Rumah Tangga (ART)",
+        "documentName": "Anggaran Rumah Tangga (ART) - Draft",
         "status": "process",
         "downloadURL": ""
     }

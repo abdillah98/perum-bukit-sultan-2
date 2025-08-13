@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Lorong 5",
+    "rules": [
+      { "block": "E4", "min": 25, "max": 48 },
+      { "block": "E5", "min": 1,  "max": 21 }
+    ]
+  },
+  {
+    "name": "Lorong 6",
+    "rules": [
+      { "block": "E6", "min": 10, "max": 20 },
+      { "block": "E7", "min": 5,  "max": 15 }
+    ]
+  }
+]

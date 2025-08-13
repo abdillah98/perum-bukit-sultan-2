@@ -1,5 +1,6 @@
 import React from 'react'
 import rulesData from '@/data/rules.json'
+import Link from 'next/link'
 
 export default function page() {
     return (
@@ -12,10 +13,10 @@ export default function page() {
                 {rulesData.map((item, index) =>
                     <li key={index} className="flex justify-between border-b last:border-b-0 py-3 px-4">
                         <div>📄 {item.documentName}</div>
-                        <ButtonStatus 
-                            status={item.status} 
-                            downloadURL={item.downloadURL}
-                        />
+                        {item.status === 'process' 
+                            ? <ButtonLink label="Unduh" path="/on-progress" />
+                            : <ButtonLink label="Unduh" path={item.downloadURL} blank />
+                        }
                     </li>
                 )}
             </ul>
@@ -24,34 +25,28 @@ export default function page() {
 }
 
 
-const ButtonStatus: React.FC<{status: string, downloadURL?: string}> = ({status, downloadURL}) => {
-    if (status === 'draft') {
-        return (
-            <a 
-                href={downloadURL} 
-                target="_blank" 
-                rel="noopener" 
-                className="block font-bold text-xs px-3 py-1 rounded bg-orange-100 text-orange-500"
-            >
-                Draft
-            </a>
-        )
-    }
+const ButtonLink: React.FC<{label: string, path: string, blank?: boolean}> = ({label, path, blank}) => {
 
-    if (status === 'approve') {
+
+    if (blank) {
         return (
             <a 
-                href={downloadURL} 
+                href={path} 
                 target="_blank" 
                 rel="noopener" 
-                className="block font-bold text-xs px-3 py-1 rounded bg-blue-100 text-blue-500 capitalized"
+                className="block font-bold text-xs px-3 py-1 rounded bg-blue-100 text-blue-500"
             >
-                Unduh
+                {label}
             </a>
         )
     }
     
     return (
-        <div className="block font-bold text-xs px-3 py-1 rounded bg-red-100 text-red-500 cursor-not-allowed">Proses</div>
+        <Link 
+            href={path} 
+            className="block font-bold text-xs px-3 py-1 rounded bg-blue-100 text-blue-500"
+        >
+            {label}
+        </Link>
     )
 }

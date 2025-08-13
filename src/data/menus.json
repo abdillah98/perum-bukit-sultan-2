@@ -16,7 +16,7 @@
     {
         "name": "Data Warga",
         "icon": "📁",
-        "isActive": false,
+        "isActive": true,
         "path": "/people",
         "url": ""
     },
