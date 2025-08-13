@@ -10,27 +10,48 @@ export default function page() {
             </div>
             <ul className="border rounded-lg">
                 {rulesData.map((item, index) =>
-                    <li key={index} className="flex justify-between border-b last:border-b-0 py-2 px-4">
+                    <li key={index} className="flex justify-between border-b last:border-b-0 py-3 px-4">
                         <div>📄 {item.documentName}</div>
-                        {item.downloadURL.length > 0 ?
-                            <a 
-                                href={item.downloadURL} 
-                                target="_blank" 
-                                rel="noopener" 
-                                className="block font-bold text-xs px-3 py-1 rounded bg-blue-100 text-blue-500"
-                            >
-                                Unduh
-                            </a> :
-                            <a 
-                                href="#"
-                                className="block font-bold text-xs px-3 py-1 rounded bg-red-100 text-red-500 cursor-not-allowed"
-                            >
-                                Draft
-                            </a>
-                        }
+                        <ButtonStatus 
+                            status={item.status} 
+                            downloadURL={item.downloadURL}
+                        />
                     </li>
                 )}
             </ul>
         </div>
+    )
+}
+
+
+const ButtonStatus: React.FC<{status: string, downloadURL?: string}> = ({status, downloadURL}) => {
+    if (status === 'draft') {
+        return (
+            <a 
+                href={downloadURL} 
+                target="_blank" 
+                rel="noopener" 
+                className="block font-bold text-xs px-3 py-1 rounded bg-orange-100 text-orange-500"
+            >
+                Draft
+            </a>
+        )
+    }
+
+    if (status === 'approve') {
+        return (
+            <a 
+                href={downloadURL} 
+                target="_blank" 
+                rel="noopener" 
+                className="block font-bold text-xs px-3 py-1 rounded bg-blue-100 text-blue-500 capitalized"
+            >
+                Unduh
+            </a>
+        )
+    }
+    
+    return (
+        <div className="block font-bold text-xs px-3 py-1 rounded bg-red-100 text-red-500 cursor-not-allowed">Proses</div>
     )
 }
