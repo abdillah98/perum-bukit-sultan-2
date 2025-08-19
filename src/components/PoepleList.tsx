@@ -29,7 +29,8 @@ export default function PeopleList() {
     const [people, setPeople] = useState<PeopleTableTypes[]>([]);
     const [selectedStreet, setSelectedStreet] = useState<string>(""); // dipakai untuk filter
     const [streetRules, setStreetRules] = useState<Record<string, (p: PeopleTableTypes) => boolean>>({});
-    const [searchQuery, setSearchQuery] = useState("");
+    const [searchQuery, setSearchQuery] = useState<string>("");
+    const [totalRecord, setTotalRecord] = useState<number>(0);
 
     // Load rules dari JSON
     useEffect(() => {
@@ -68,6 +69,22 @@ export default function PeopleList() {
 
         return () => unsubscribe();
     }, []);
+
+    useEffect(() => {
+      console.log('selectedStreet', selectedStreet)
+      
+      const getTotalRecord = () => {
+        const street = streetFilterData.find(item => item.name === selectedStreet);
+        if (!street) return;
+        const streetOne = (street.rules[0].max - street.rules[0].min) + 1;
+        const streetTwo = (street.rules[1].max - street.rules[1].min) + 1;
+        const total = streetOne + streetTwo;
+        setTotalRecord(total)
+      }
+
+      getTotalRecord()
+    }, [selectedStreet])
+    
 
     // Filter data
     const filteredPeople =
@@ -136,6 +153,9 @@ export default function PeopleList() {
                     </li>
                 ))}
             </ul>
+            <div>
+                Total terdaftar { filteredPeople.length } dari { totalRecord } kepala keluarga di { selectedStreet }
+            </div>
         </div>
     );
 }
