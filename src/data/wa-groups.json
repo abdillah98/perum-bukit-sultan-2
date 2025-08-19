@@ -1,7 +1,13 @@
 [
     {
-        "id": 2,
+        "id": 1,
         "groupsName": "Blok E1-E2 (Gang 2)",
+        "groupsUrl": "https://chat.whatsapp.com/G2exIztDbBS3Om3PKhidDL?mode=ac_t",
+        "isActive": true
+    },
+    {
+        "id": 2,
+        "groupsName": "Blok E2-E3 (Gang 2)",
         "groupsUrl": "https://chat.whatsapp.com/BVpZ9iKn2anJgjBL1Qpg1p?mode=ac_t",
         "isActive": true
     },
