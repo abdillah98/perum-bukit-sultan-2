@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className="flex flex-col gap-4">
         <Tooltip>
           <TooltipTrigger asChild>
-            <Link href="/">
+            <Link href="/marketplace">
               <Button 
                 variant="secondary" 
                 size="icon" 

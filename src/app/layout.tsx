@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/Nav";
+import HousingLayout from "@/components/layouts/HousingLayout";
+import MarketplaceLayout from "@/components/layouts/MarketplaceLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,34 +25,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
+  const isMarketplace = (process.env.MARKETPLACE_SESSION === 'true');
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <div className="relative">
-          <Navbar />
-          <div className="ml-[80px] px-6 md:px-0 py-6">
-            <main className="max-w-full md:max-w-2xl mx-auto">
-              <div>
-                {children}
-              </div>
-            </main>
-          </div>
-        </div> */}
-
-        <div className="relative">
-          <Nav />
-          <div className="px-6 md:px-0 py-6">
-            <main className="max-w-full md:max-w-md mx-auto mb-8">
-              <div>{children}</div>
-            </main>
-            <div>
-              <div className="text-center text-xs">Created & Developed by Bukit Sultan II.</div>
-              <div className="text-center text-xs">Made with ❤.</div>
-            </div>
-          </div>
-        </div>
+        {isMarketplace 
+          ? <MarketplaceLayout>{children}</MarketplaceLayout> 
+          : <HousingLayout>{children}</HousingLayout>
+        }
       </body>
     </html>
   );

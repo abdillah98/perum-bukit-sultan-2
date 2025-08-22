@@ -121,7 +121,7 @@ export default function PeopleList() {
                     className="border rounded-md px-2 py-1 focus:border-blue-300"
                 >
                     <option value="" disabled>
-                        Pilih Lorong
+                        Pilih Gang
                     </option>
                     {Object.keys(streetRules).map((street) => (
                         <option key={street} value={street}>

@@ -1,13 +1,34 @@
 [
   {
-    "name": "Lorong 5",
+    "name": "Gang 2",
+    "rules": [
+      { "block": "E1", "min": 18, "max": 32 },
+      { "block": "E2", "min": 2,  "max": 24 }
+    ]
+  },
+  {
+    "name": "Gang 3",
+    "rules": [
+      { "block": "E2", "min": 25, "max": 48 },
+      { "block": "E3", "min": 1,  "max": 23 }
+    ]
+  },
+  {
+    "name": "Gang 4",
+    "rules": [
+      { "block": "E3", "min": 24, "max": 45 },
+      { "block": "E4", "min": 1,  "max": 24 }
+    ]
+  },
+  {
+    "name": "Gang 5",
     "rules": [
       { "block": "E4", "min": 25, "max": 48 },
       { "block": "E5", "min": 1,  "max": 21 }
     ]
   },
   {
-    "name": "Lorong 6",
+    "name": "Gang 6",
     "rules": [
       { "block": "E6", "min": 10, "max": 20 },
       { "block": "E7", "min": 5,  "max": 15 }
