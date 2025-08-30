@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "documentName": "Tata Tertib Mubes - Draft",
+        "status": "draft",
+        "downloadURL": "https://drive.google.com/file/d/14Hq-Rig26HimFaY75UvCf165l0_wUz7U/view?usp=sharing"
+    },
+    {
+        "id": 2,
+        "documentName": "Persiapan Mubes - Draft",
+        "status": "draft",
+        "downloadURL": "https://drive.google.com/file/d/1HTYaZr-F3lcer1aIUdKAGdzvxwzSltxZ/view?usp=sharing"
+    },
+    {
+        "id": 3,
+        "documentName": "Rundown Mubes - Draft",
+        "status": "draft",
+        "downloadURL": "https://drive.google.com/file/d/1GS0Kj62t0Q0_WIMYBye_RrnyF81XbraV/view?usp=sharing"
+    },
+    {
+        "id": 4,
+        "documentName": "Undangan Mubes - Draft",
+        "status": "draft",
+        "downloadURL": "https://drive.google.com/file/d/1AqPDPTqgS6SWIZCvhwT2EU-TKTxvjRrt/view?usp=sharing"
+    },
+    {
+        "id": 5,
+        "documentName": "Berita Acara - Draft",
+        "status": "draft",
+        "downloadURL": "https://drive.google.com/file/d/1CuuheIQX3ojV3i7BaVCh2umRTVJP8IJe/view?usp=sharing"
+    }
+]

@@ -1,13 +1,13 @@
 import React from 'react'
-import rulesData from '@/data/rules.json'
+import rulesData from '@/data/docs.json'
 import Link from 'next/link'
 
-export default function Rules() {
+export default function Docs() {
     return (
         <div className="flex flex-col gap-4">
             <div>
-                <h1 className="font-bold text-xl mb-2">AD & ART</h1>
-                <p>Daftar dokumen AD dan ART Perum. Bukit Sultan 2. </p>
+                <h1 className="font-bold text-xl mb-2">Dokumen</h1>
+                <p>Daftar dokumen terkait Perum. Bukit Sultan 2. </p>
             </div>
             <ul className="border rounded-lg">
                 {rulesData.map((item, index) =>

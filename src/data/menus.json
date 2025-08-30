@@ -47,6 +47,12 @@
         "isActive": true,
         "path": "/rules",
         "url": ""
+    },
+    {
+        "name": "Dokumen Lainnya",
+        "icon": "📄",
+        "isActive": true,
+        "path": "/docs",
+        "url": ""
     }
-    
 ]
