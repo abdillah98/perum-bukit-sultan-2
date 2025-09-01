@@ -21,7 +21,7 @@
     ]
   },
   {
-    "name": "Gang 4 - Blok D/F",
+    "name": "Gang 4 - Blok D/E",
     "rules": [
       { "block": "D1", "min": 1, "max": 23 },
       { "block": "E1", "min": 1,  "max": 17 }
