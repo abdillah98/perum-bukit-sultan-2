@@ -50,7 +50,7 @@ export default function PeopleList() {
 
     // Load data warga dari Firebase
     useEffect(() => {
-        const wargaRef = ref(db, "warga");
+        const wargaRef = ref(db, "people");
         const unsubscribe = onValue(wargaRef, (snapshot) => {
             const data = snapshot.val() || {};
 
