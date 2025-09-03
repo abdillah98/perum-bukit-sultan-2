@@ -28,5 +28,11 @@
         "documentName": "Berita Acara - Draft",
         "status": "draft",
         "downloadURL": "https://drive.google.com/file/d/1CuuheIQX3ojV3i7BaVCh2umRTVJP8IJe/view?usp=sharing"
+    },
+    {
+        "id": 6,
+        "documentName": "Template Notulensi - Draft",
+        "status": "draft",
+        "downloadURL": "https://docs.google.com/document/d/1a1rZaPD5kJA0bzG7Ltbzw0kkPyfuyPGqScxKyVi53e0/edit?usp=sharing"
     }
 ]
